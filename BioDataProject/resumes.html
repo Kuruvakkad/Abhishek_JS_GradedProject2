@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioData</title>
+    <link rel="stylesheet" type="text/css" href="bio.css">
+</head>
+
+<body>
+    <div class="parent">
+
+
+        <div class="searchbox">
+            <input placeholder="Search for keywords to filter resume" type="text" aria-label="search" id="searchInput"
+                value="" onkeyup="search_applicant()" onsearch="search_applicant()">
+            <button onclick="showPrevRecord()" id="previousBtn">PREV</button>
+            <button onclick="showNextRecord()" id="nextBtn">NEXT</button>
+
+        </div>
+        <div class="resumeContainer">
+
+            <div class="headerContainer">
+                <div class="leftblock">
+                    <h1 id="name"></h1>
+                    <label id="applytag">Applied For:<h3 id="appliedfor"></h3></label>
+
+                </div>
+                <div class="rightblock">
+                    <img id="image" src="profilepic.png" alt="profile pic">
+
+                </div>
+            </div>
+
+            <div id="maincontainer">
+                <div id="leftmain">
+                    <h4>Personal Information</h4>
+                    <p id="leftMainDataset"></p>
+                    <br>
+                    <h4>Technical Skills</h4>
+                    <p id="skillSet"></p>
+                    <br>
+                    <h4>Hobbies</h4>
+                    <p id="hobbies"> </p>
+
+                </div>
+
+
+                <div id="rightmain">
+                    <h3>Work Experience in previous company</h3>
+                    <br>
+                    <b>Company Name : </b>
+                    <span id="CompanyName">NA</span>
+                    <br><br>
+
+                    <b>Position : </b>
+                    <span id="Position">NA</span>
+                    <br><br>
+
+                    <b>Start Date : </b>
+                    <span id="startDate">NA</span>
+                    <br><br>
+
+                    <b>End date : </b>
+                    <span id="endDate">NA</span>
+                    <br><br>
+
+                    <b>Summary : </b>
+                    <span id="summary">NA</span>
+                    <br><br>
+
+                    <h3>Projects</h3>
+                    <br>
+                    <p id="projName"></p>
+                    <br><br>
+
+                    <h3>Education</h3>
+                    <br>
+                    <p id="education-details"></p>
+                    <br><br>
+
+                    <h3>Internship</h3>
+                    <br>
+                    <p id="internship-details"></p>
+                    <br><br>
+
+                    <h3>Achievements</h3>
+                    <br>
+                    <p id="achievement-details">
+                    </p>
+                    <br><br>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="error-image">
+            <img src="error_msg.png" alt="Error">
+        </div>
+    </div>
+
+
+    <script src="Application.js"></script>
+
+
+</body>
+
+
+</html>

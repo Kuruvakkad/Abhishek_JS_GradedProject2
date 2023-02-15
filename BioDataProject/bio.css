@@ -1,0 +1,108 @@
+body{
+    margin: 15px;
+    /*margin-top: 10px;
+    padding: 0px;*/
+    background-color: rgb(183, 176, 176);
+   
+}
+.parent{
+    display: flex;
+    flex-direction: column;
+}
+.searchbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 8px;
+    
+}
+.searchbox button{
+    border: solid black 1px;
+    padding: 8px;
+}
+.searchbox input{
+    border: solid black 2px;
+    padding: 6px;
+    min-width: 15rem;
+
+}
+
+.resumeContainer{
+    display: flex;
+    border: solid black 2px;
+    border-radius: 5px;
+    margin: 15px 25px;
+    height: 80vh;
+    flex-direction: column;
+}
+.headerContainer{
+    display: flex;
+    flex-direction: row;
+    background-color: #d1f6f0;
+    min-height: 20%;
+    padding: 8px;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+.leftblock{
+    width: 70%;
+    
+}
+.rightblock{
+    width: 30%;
+    
+}
+
+
+#appliedfor{
+    display: inline;
+   
+}
+
+
+#maincontainer{
+   
+    min-height: 70%;
+    display: grid;
+    column-gap: 35px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    grid-template-areas: 'menu main main'
+        'menu main main';
+    overflow: scroll;
+
+}
+#leftmain{
+    grid-area: menu;
+    background-color: #f8e2e2;
+    height: fit-content;
+    padding: 16px;
+    text-align: right;
+}
+#label1{
+    background-color: #a9a9a9;
+    text-align: left;
+    padding: 4px;
+    
+}
+
+#rightmain{
+    grid-area: main;
+    margin-left: 32px;
+}
+#summary,#startDate,#endDate,#Position,#CompanyName,#projName,#proDescription,
+#course,#ug,#courseStart,#courseEnd,#cgpa,#puInstitute,#puCGPA,
+#highclass,#highMark,#cmpnyName,#intPosition,#intSdate,#intEnddate,#intSummary,
+#achievements{
+    display: inline;
+    
+    
+}
+#headLabels{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: larger;
+}
